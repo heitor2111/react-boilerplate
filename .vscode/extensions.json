@@ -1,0 +1,13 @@
+{
+  "recommendations": [
+    "formulahendry.auto-rename-tag",
+    "mikestead.dotenv",
+    "dsznajder.es7-react-js-snippets",
+    "christian-kohler.path-intellisense",
+    "esbenp.prettier-vscode",
+    "editorconfig.editorconfig",
+    "dbaeumer.vscode-eslint",
+    "antfu.iconify",
+    "bradlc.vscode-tailwindcss"
+  ]
+}
