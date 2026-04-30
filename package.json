@@ -19,10 +19,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.29.0",
-    "@eslint/css": "^1.1.0",
     "@eslint/js": "^10.0.1",
-    "@eslint/json": "^1.2.0",
-    "@eslint/markdown": "^8.0.1",
     "@rolldown/plugin-babel": "^0.2.3",
     "@trivago/prettier-plugin-sort-imports": "^6.0.2",
     "@types/babel__core": "^7.20.5",

@@ -1,69 +1,33 @@
-import js from "@eslint/js";
-import globals from "globals";
-import tseslint from "typescript-eslint";
-import pluginReact from "eslint-plugin-react";
-import json from "@eslint/json";
-import markdown from "@eslint/markdown";
-import css from "@eslint/css";
-import { defineConfig, globalIgnores } from "eslint/config";
-import prettierConfig from "eslint-config-prettier";
+import js from '@eslint/js'
+import prettierConfig from 'eslint-config-prettier/flat'
+import pluginReact from 'eslint-plugin-react'
+import { defineConfig, globalIgnores } from 'eslint/config'
+import globals from 'globals'
+import tseslint from 'typescript-eslint'
 
 export default defineConfig([
-  globalIgnores(["dist/**", "build/**", "node_modules/**"]),
+  globalIgnores(['dist/**', 'build/**', 'node_modules/**']),
   {
-    files: ["**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx}"],
+    files: ['**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx}'],
     plugins: { js },
-    extends: ["js/recommended"],
+    extends: ['js/recommended'],
     languageOptions: { globals: globals.browser },
   },
   tseslint.configs.recommended,
   pluginReact.configs.flat.recommended,
   prettierConfig,
   {
-    files: ["**/*.json"],
-    plugins: { json },
-    language: "json/json",
-    extends: ["json/recommended"],
-  },
-  {
-    files: ["**/*.jsonc"],
-    plugins: { json },
-    language: "json/jsonc",
-    extends: ["json/recommended"],
-  },
-  {
-    files: ["**/*.json5"],
-    plugins: { json },
-    language: "json/json5",
-    extends: ["json/recommended"],
-  },
-  {
-    files: ["**/*.md"],
-    plugins: { markdown },
-    language: "markdown/commonmark",
-    extends: ["markdown/recommended"],
-  },
-  {
-    files: ["**/*.css"],
-    plugins: { css },
-    language: "css/css",
-    extends: ["css/recommended"],
-  },
-  {
     settings: {
       react: {
-        version: "19",
+        version: '19',
       },
     },
     rules: {
-      "no-console": ["warn", { allow: ["warn", "error"] }], // Evitar console.log esquecido em produção
-      "@typescript-eslint/no-explicit-any": "warn", // Evitar 'any' ao máximo
-      "@typescript-eslint/no-unused-vars": [
-        "error",
-        { argsIgnorePattern: "^_" },
-      ], // Variáveis não usadas são erro
-      "@typescript-eslint/consistent-type-imports": "error", // Força 'import type' para tipos (melhora performance de build)
-      "react/react-in-jsx-scope": "off", // React 17+ não precisa importar React para usar JSX
+      'no-console': ['warn', { allow: ['warn', 'error'] }], // Evitar console.log esquecido em produção
+      '@typescript-eslint/no-explicit-any': 'warn', // Evitar 'any' ao máximo
+      '@typescript-eslint/no-unused-vars': ['error', { argsIgnorePattern: '^_' }], // Variáveis não usadas são erro
+      '@typescript-eslint/consistent-type-imports': 'error', // Força 'import type' para tipos (melhora performance de build)
+      'react/react-in-jsx-scope': 'off', // React 17+ não precisa importar React para usar JSX
     },
   },
-]);
+])
