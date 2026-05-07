@@ -20,7 +20,7 @@
       "devDependencies": {
         "@babel/core": "^7.29.0",
         "@eslint/js": "^10.0.1",
-        "@iconify/json": "^2.2.468",
+        "@iconify/json": "^2.2.470",
         "@rolldown/plugin-babel": "^0.2.3",
         "@trivago/prettier-plugin-sort-imports": "^6.0.2",
         "@types/babel__core": "^7.20.5",
@@ -111,7 +111,7 @@
 
     "@humanwhocodes/retry": ["@humanwhocodes/retry@0.4.3", "", {}, "sha512-bV0Tgo9K4hfPCek+aMAn81RppFKv2ySDQeMoSZuvTASywNTnVJCArCZE2FWqpvIatKu7VMRLWlR1EazvVhDyhQ=="],
 
-    "@iconify/json": ["@iconify/json@2.2.468", "", { "dependencies": { "@iconify/types": "*", "pathe": "^2.0.3" } }, "sha512-vfW6JQdYiHAFnCRZN6H5uzObcFBTaAguNaKqUpeazDLz5DO7R2UM8StyM/+v8d8KP15SfrQzG9aZy4uF9lViVQ=="],
+    "@iconify/json": ["@iconify/json@2.2.470", "", { "dependencies": { "@iconify/types": "*", "pathe": "^2.0.3" } }, "sha512-8VgSitlCUvHL1vrFvwvM3L1sHakYHFM8txGDmnTQXQ3rYtkpvdyY3L/5ew/LWPOa2/a4Fvh3O43jhi5qajySrw=="],
 
     "@iconify/react": ["@iconify/react@6.0.2", "", { "dependencies": { "@iconify/types": "^2.0.0" }, "peerDependencies": { "react": ">=16" } }, "sha512-SMmC2sactfpJD427WJEDN6PMyznTFMhByK9yLW0gOTtnjzzbsi/Ke/XqsumsavFPwNiXs8jSiYeZTmLCLwO+Fg=="],
 
