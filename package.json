@@ -27,7 +27,7 @@
   "devDependencies": {
     "@babel/core": "^7.29.0",
     "@eslint/js": "^10.0.1",
-    "@iconify/json": "^2.2.473",
+    "@iconify/json": "^2.2.476",
     "@rolldown/plugin-babel": "^0.2.3",
     "@trivago/prettier-plugin-sort-imports": "^6.0.2",
     "@types/babel__core": "^7.20.5",
